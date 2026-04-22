@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Luis Angel</h1>
+
+    <!-- Menú sin JS -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="mascotas.html">Mascotas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="sobre-mi" class="card hidden">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy un estudiante apasionado por la tecnología y el desarrollo web, 
+        con gran interés en aprender constantemente y mejorar mis habilidades
+        en programación. Difruto crear proyectos que me permitan práctiar mis conocimientos 
+        y enfrentar nuevos retos.
+    </p>
+    <p>
+        Tengo conocimiento en HTML, CSS y Python, y me enfoco en escribir código organizado,
+        claro
+    </p>
+    <p></p>
+
+</section>
+
+<section id="hobbies" class="card hidden">
+    <h2>Mis hobbies</h2>
+    <div class="hobbies-grid">
+        <div class="hobby">
+            <div class="icon">🏀</div>
+            <p>Baloncesto</p>
+        </div>
+        <div class="hobby">
+            <div class="icon">⚽</div>
+            <p>Fútbol</p>
+        </div>
+        <div class="hobby">
+            <div class="icon">🎨</div>
+            <p>Dibujar</p>
+        </div>
+        <div class="hobby">
+            <div class="icon">🕺</div>
+            <p>Bailar</p>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="card hidden">
+    <h2>Proyectos</h2>
+    <ul>
+        <li><a href="#">Proyecto 1</a></li>
+        <li><a href="#">Proyecto 2</a></li>
+        <li><a href="#">Proyecto 3</a></li>
+    </ul>
+</section>
+
+<section id="contacto" class="card hidden">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
