@@ -5,14 +5,14 @@ body {
     color: white;
 }
 
-/* Header */
+
 header {
     text-align: center;
     padding: 20px;
     position: relative;
 }
 
-/* Menú */
+
 #menu-toggle {
     display: none;
 }
@@ -23,7 +23,7 @@ header {
     cursor: pointer;
 }
 
-/* Navegación */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -44,7 +44,6 @@ nav a:hover {
     color: #00e0ff;
 }
 
-/* Cards */
 .card {
     background: rgba(255,255,255,0.1);
     margin: 20px;
@@ -53,7 +52,7 @@ nav a:hover {
     backdrop-filter: blur(10px);
 }
 
-/* Formulario */
+
 form input, form button {
     display: block;
     width: 100%;
@@ -69,7 +68,7 @@ button {
     cursor: pointer;
 }
 
-/* Hobbies */
+
 .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -93,7 +92,7 @@ button {
     margin-bottom: 10px;
 }
 
-/* Animación simple (sin JS) */
+
 .hidden {
     animation: fadeUp 1s ease forwards;
 }
@@ -109,7 +108,7 @@ button {
     }
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
 
     .menu-icon {
@@ -133,4 +132,55 @@ button {
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    
+}
+
+section article{
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+}
+
+a {
+    background-color: #1e1e2f;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #00e0ff;
+    transition: 0.3s;
+}
+
+section ul li {
+    display: flex;
+    grid-template-rows: 10%;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border-color: transparent;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+button:hover {
+    color: #00e0ff;
+    transition: 0.3s;
 }
