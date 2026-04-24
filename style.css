@@ -184,3 +184,20 @@ button:hover {
     color: #00e0ff;
     transition: 0.3s;
 }
+
+.galeria {
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1e2f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-items: center;
+    margin: 12px;
+}
+
+.galeria img {
+    border-radius: 10%;
+    border-color: #1e1e2f;
+    transition: 1.2s;
+    padding: 0.2%;
+    margin: 0%;
+}

@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <!--Enlace al archivo de datos-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!--==================
+    Header (Navegación)
+    Se utiliza Flexbox para organizar los elementos horizontalmente
+    =============================-->        
 
 <header>
     <h1>Luis Angel</h1>
@@ -14,7 +20,7 @@
 
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">☰</label>
-
+    <!-- Menú de navegación principal -->
     <nav>
         <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -26,9 +32,15 @@
     </nav>
 </header>
 
+<!-- =========================
+     SECCIÓN: SOBRE MÍ
+     Contiene información personal
+     Incluye interacción con JavaScript
+========================= -->
 <section id="sobre-mi" class="card hidden">
     <h2>Sobre mí</h2>
-    <p>
+    <!-- Texto que será modificado dinámicamente con JS -->
+    <p id="texto">
         Soy un estudiante apasionado por la tecnología y el desarrollo web, 
         con gran interés en aprender constantemente y mejorar mis habilidades
         en programación. Difruto crear proyectos que me permitan práctiar mis conocimientos 
@@ -52,9 +64,15 @@
         Me considero una persona responsable, creativa y con muchas ganas de 
         seguir mejorando cada día.
     </p>
+    <!-- Botón que ejecuta una función JS -->
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
 
 </section>
 
+<!-- =========================
+     SECCIÓN: HOBBIES
+     Uso de CSS Grid para organizar elementos en tarjetas
+========================= -->
 <section id="hobbies" class="card hidden">
     <h2>Mis hobbies</h2>
     <div class="hobbies-grid">
@@ -76,15 +94,23 @@
         </div>
     </div>
 </section>
-
+<!-- =========================
+     SECCIÓN: PROYECTOS
+     Implementa CSS Grid para layout en columnas
+========================= -->
 <section id="proyectos" class="card hidden">
     <h2>Proyectos</h2>
-    <ul>
-        <li><a href="https://github.com/luisangeldevia679-coder">Github</a></li>
-        <li><a href="https://moodle.riwi.io/mod/page/view.php?id=6146">Moodle</a></li>
-    </ul>
+    <div class="proyectos-grid">
+        <div class="proyecto">Proyecto 1</div>
+        <div class="proyecto">Proyecto 2</div>
+        <div class="proyecto">Proyecto 3</div>
+        <div class="proyecto">Proyecto 4</div>
+    </div>
 </section>
-
+<!-- =========================
+     SECCIÓN: CONTACTO
+     Ejemplo de interacción dinámica con JS
+========================= -->
 <section id="contacto" class="card hidden">
     <h2>Contacto</h2>
     <form>
@@ -92,7 +118,18 @@
         <input type="email" placeholder="Tu correo" required>
         <button type="submit">Enviar</button>
     </form>
+
+
+    <!-- Botón que muestra u oculta un mensaje -->
+    <button onclick="toggleMensaje()">Mostrar/Ocultar mensaje</button>
+
+    <!-- Mensaje oculto inicialmente -->
+    <p id="mensaje" style="display:none;">
+        Gracias por visitar mi portafolio 👋
+    </p>
 </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
